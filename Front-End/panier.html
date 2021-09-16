@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/mini-reset.css">   
+    <link rel="stylesheet" href="CSS/header-footer.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
+    <title>Panier</title>
+
+</head>
+<body>
+    
+
+    <header class="header-banniere">
+        <img src="./img/photo-1.jpg" alt="Un chariot à gauche et le nom Orinoco à droite" class="">
+        <div>
+            <a href="index.html">
+                <h2>Orinoco</h2>
+            </a>
+            <span>Voir le monde autrement !</span>
+        </div>
+        <a href="./panier.html"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+
+
+    <main class="panier">
+        <h1>Finalisez votre commande</h1>
+        <div>
+            <h2>Votre panier</h2>
+            <table>
+                <tr>
+                    <th>Appareil</th>
+                    <th>Objectif</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Prix Total</th>
+                </tr>
+                <tr>
+                    <th id="prix-total"></th>
+                </tr>
+            </table>
+            <button id="panier_remove">Supprimer tout mon panier</button>
+        </div>
+        <h2>Vos coordonnées</h2>
+        <form action="confirmation.html" method="get">
+        <!-- <form> -->
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom"
+                inputmode="text" pattern="[A-Za-z -]+" required>
+            </div>
+            <div>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom"
+                inputmode="text" pattern="[A-Za-z -]+" required>
+            </div>
+            <div>
+                <label for="adress">Adresse :</label>
+                <input type="text" name="adress" id="adress"
+                inputmode="text" required>
+            </div>
+            <div>
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville"
+                inputmode="text" pattern="[A-Za-z -]+" required>
+            </div>
+            <div>
+                <label for="cp">Code Postal :</label>
+                <input type="text" name="cp" id="cp"
+                inputmode="numeric" pattern="[0-9]{5}" 
+                onkeyup="onlyNumber('cp')" required>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email"
+                inputmode="email" required>
+            </div>
+            <input type="submit" value="Je passe ma commande" id="envoyerForm">
+        </form>
+    </main>
+
+
+    <footer>
+        <a href="#">Mentions Legales</a>
+        <a href="mailto: orinoco-support@gmail.com">Contact</a>
+    </footer>
+
+
+    <script type="text/javascript" src="Back-End/app.js"></script>
+    <script type="text/javascript" src="JS/panier.js"></script>
+    <script src="https://kit.fontawesome.com/481aade194.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
