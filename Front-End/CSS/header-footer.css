@@ -1,0 +1,74 @@
+/**********
+    HEADER - FOOTER
+*/
+header, footer {
+  color: black; }
+
+/*
+    HEADER - FOOTER
+**********/
+/**********
+    HEADER
+*/
+header {
+  height: 80vh;
+  position: relative; }
+  header img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  header div {
+    position: absolute;
+    top: 2rem;
+    left: 10%;
+    text-align: center;
+    color: #CE7D47; }
+    header div > a h2 {
+      font-size: 4em;
+      text-shadow: 3px 0 0 #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff; }
+    header div span {
+      font-size: 2em;
+      text-shadow: 3px 0 0 #272727, -3px 0 0 #272727, 0 3px 0 #272727, 0 -3px 0 #272727, 3px 3px #272727, -3px -3px 0 #272727, 3px -3px 0 #272727, -3px 3px 0 #272727; }
+  header > a {
+    position: absolute;
+    top: 4rem;
+    right: 5%;
+    font-size: 4em;
+    font-weight: 600;
+    text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff, 4px 4px #fff, -4px -4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff; }
+    header > a i {
+      color: #CE7D47; }
+
+.header-banniere {
+  height: 35vh; }
+  .header-banniere img {
+    -o-object-position: center top;
+    object-position: center top; }
+
+/*
+    HEADER
+**********/
+/**********
+    FOOTER
+*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  height: 7rem;
+  margin-top: 7%;
+  background-color: #CE7D47;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #272727; }
+
+/*
+    FOOTER
+**********/

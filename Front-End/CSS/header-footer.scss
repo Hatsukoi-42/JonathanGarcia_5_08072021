@@ -1,0 +1,84 @@
+@import "variables";
+
+/**********
+    HEADER - FOOTER
+*/
+header, footer {
+    color: black;
+}
+/*
+    HEADER - FOOTER
+**********/
+
+
+
+/**********
+    HEADER
+*/
+header {
+    height: 80vh;
+    position: relative;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    div {
+        position: absolute;
+        top: 2rem;
+        left: 10%;
+        text-align: center;
+        color: $myOrange;
+        > a {
+            h2 {
+                font-size: 4em;
+                text-shadow: 3px 0 0 #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
+            }
+        }
+        span {
+            font-size: 2em;
+            text-shadow: 3px 0 0 $myGray, -3px 0 0 $myGray, 0 3px 0 $myGray, 0 -3px 0 $myGray, 3px 3px $myGray, -3px -3px 0 $myGray, 3px -3px 0 $myGray, -3px 3px 0 $myGray;
+        }
+    }
+    > a {
+        position: absolute;
+        top: 4rem;
+        right: 5%;
+        font-size: 4em;
+        font-weight: 600;
+        text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff, 4px 4px #fff, -4px -4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff;
+        i {
+            color: $myOrange;
+        }
+    }
+}
+
+.header-banniere {
+    height: 35vh;
+    img {
+        object-position: center top;
+    }
+}
+/*
+    HEADER
+**********/
+
+
+
+/**********
+    FOOTER
+*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 7rem;
+    margin-top: $margin-into-card;
+    background-color: $myOrange;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: $myGray
+}
+/*
+    FOOTER
+**********/
