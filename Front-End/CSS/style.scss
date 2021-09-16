@@ -1,0 +1,257 @@
+@import "variables";
+
+/**********
+    HTML
+*/
+html {  
+    --primary: #F3E9F1;
+    // --secondary: #965FE7;
+    --secondary: #CE7D47; // test
+    --terciary: #CE7D47;
+    --myGray: rgb(39, 39, 39);
+}
+/*
+    HTML
+**********/
+
+
+
+/**********
+    BASICS
+*/
+body {
+    background-color: $myGray;
+    color: $myOrange;
+}
+
+a {
+    text-decoration: none!important;
+    color: inherit!important;
+}
+ul, li {
+    list-style: none;
+}
+
+img {
+    object-fit: cover;
+}
+/*
+    BASICS
+**********/
+
+
+
+/**********
+    CARDS
+*/
+.API-articles  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        > div {
+        width: 30%;
+        margin: $margin-into-card 1% 0;
+        border: $myOrange solid 3px;
+        border-radius: 1em;
+            img {
+                height: 20rem;
+                width: 100%;
+                border-radius: 0.7em 0.7em 0 0;
+            }
+            > div {
+                padding: 0 3% 3%;
+                h3 {
+                    padding: 0.8em 0;
+                }
+                strong {
+                    display: block;
+                    margin: 0.5em 0;
+                }
+                a {
+                    display: inline-block;
+                    border: $myOrange solid 3px;
+                    padding: 0.5em;
+                } 
+            }
+        }
+}
+/*
+    CARDS
+**********/
+
+
+
+/**********
+    ONE CARD
+*/
+.API-oneArticle  {
+    font-size: 120%;
+        > div {
+        width: 50%;
+            img {
+                width: 100%;
+            }
+            > div {
+
+                h3 {
+                    font-size: 150%;
+                    padding: 0.4em 0;
+                }
+                form {
+                    > div {
+                        margin: 0.5em 0;
+                        label {
+                            display: inline-block;
+                            width: 5em;
+                        }
+                        select {
+                            width: 25%;
+                            font-size: 1em;
+                            option {
+                                font-size: 0.9em;
+                            }
+                        }
+                        
+                    }
+                    div > select, input {
+                        border: none;
+                        border-radius: 0.2em;
+                        background-color: $myOrange;
+                        color: $myGray;
+                    }
+                    input {
+                        margin: 0.5em 0 0 0.5em;
+                        padding: 0.5em;
+                        font-size: 0.8em;
+                        font-weight: 600;
+                        cursor: pointer;
+
+                        // font-weight: 500;
+                        // margin: auto;
+                        // justify-self: center;
+                    }
+                }
+            }
+        }
+}
+/*
+    ONE CARD
+**********/
+
+
+
+/**********
+    PANIER
+*/
+main.panier {
+    padding: $margin-into-card 0 0 30%;
+    h1 {
+        // text-align: center;
+        margin-bottom: 1em;
+        padding-left: 10%;
+    }
+    h2 {
+        margin: 3em 2em 1em;
+        }
+    table {
+        margin: 1em 0;
+        border-collapse: collapse;
+        th {
+            padding: 0 1em;
+            margin: 1em 1em;
+            border-bottom: $myOrange solid 2px;
+        }
+        th#prix-total {
+            border: none;
+            padding-top: 0.5em;
+        }
+        td {
+            padding: 0.2em 1em;
+        }
+    }
+    button {
+        background-color: transparent;
+        border: $myOrange solid 2px;
+        border-radius: 0.3em;
+        color: white;
+    }   
+    button#panier_remove {
+        padding: 0.4em;
+    } 
+    form {
+        div {
+            padding: 0.1em 0;
+        }
+        label {
+            display: inline-block;
+            width: 7em;
+        }
+        input {
+            width: 20em;
+            background-color: transparent;
+            border: $myOrange solid 2px;
+            border-radius: 0.3em;
+            color: white;
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus, 
+        input:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 30px $myGray inset;
+            box-shadow: 0 0 0 30px $myGray inset;
+        }
+        input:-webkit-autofill {    
+            -webkit-text-fill-color: white;
+        }
+        input#envoyerForm {
+            width: inherit;
+            margin-top: 1em;
+            padding: 0.4em;
+        }
+    }
+}
+/*
+    PANIER
+**********/
+
+
+
+/**********
+    CONFIRMATION
+*/
+main.confirmation {
+    padding: $margin-into-card 0 0 30%;
+    h1 {
+        margin-bottom: 1em;
+        padding-left: 10%;
+    }
+    h2 {
+        margin: 3em 2em 1em;
+        }
+    table {
+        margin: 1em 0;
+        border-collapse: collapse;
+        th {
+            padding: 0 1em;
+            margin: 1em 1em;
+            border-bottom: $myOrange solid 2px;
+        }
+        th#prix-total {
+            border: none;
+            padding-top: 0.5em;
+        }
+        td {
+            padding: 0.2em 1em;
+        }
+    }
+    span {
+        display: block;
+        padding: 0.3em 0;
+    }
+}
+/*
+    CONFIRMATION
+**********/
+// @media (max-width: 768px) {
+
+// }

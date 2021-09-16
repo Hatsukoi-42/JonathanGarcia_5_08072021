@@ -1,0 +1,191 @@
+/**********
+    HTML
+*/
+html {
+  --primary: #F3E9F1;
+  --secondary: #CE7D47;
+  --terciary: #CE7D47;
+  --myGray: rgb(39, 39, 39); }
+
+/*
+    HTML
+**********/
+/**********
+    BASICS
+*/
+body {
+  background-color: #272727;
+  color: #CE7D47; }
+
+a {
+  text-decoration: none !important;
+  color: inherit !important; }
+
+ul, li {
+  list-style: none; }
+
+img {
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+/*
+    BASICS
+**********/
+/**********
+    CARDS
+*/
+.API-articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .API-articles > div {
+    width: 30%;
+    margin: 7% 1% 0;
+    border: #CE7D47 solid 3px;
+    border-radius: 1em; }
+    .API-articles > div img {
+      height: 20rem;
+      width: 100%;
+      border-radius: 0.7em 0.7em 0 0; }
+    .API-articles > div > div {
+      padding: 0 3% 3%; }
+      .API-articles > div > div h3 {
+        padding: 0.8em 0; }
+      .API-articles > div > div strong {
+        display: block;
+        margin: 0.5em 0; }
+      .API-articles > div > div a {
+        display: inline-block;
+        border: #CE7D47 solid 3px;
+        padding: 0.5em; }
+
+/*
+    CARDS
+**********/
+/**********
+    ONE CARD
+*/
+.API-oneArticle {
+  font-size: 120%; }
+  .API-oneArticle > div {
+    width: 50%; }
+    .API-oneArticle > div img {
+      width: 100%; }
+    .API-oneArticle > div > div h3 {
+      font-size: 150%;
+      padding: 0.4em 0; }
+    .API-oneArticle > div > div form > div {
+      margin: 0.5em 0; }
+      .API-oneArticle > div > div form > div label {
+        display: inline-block;
+        width: 5em; }
+      .API-oneArticle > div > div form > div select {
+        width: 25%;
+        font-size: 1em; }
+        .API-oneArticle > div > div form > div select option {
+          font-size: 0.9em; }
+    .API-oneArticle > div > div form div > select, .API-oneArticle > div > div form input {
+      border: none;
+      border-radius: 0.2em;
+      background-color: #CE7D47;
+      color: #272727; }
+    .API-oneArticle > div > div form input {
+      margin: 0.5em 0 0 0.5em;
+      padding: 0.5em;
+      font-size: 0.8em;
+      font-weight: 600;
+      cursor: pointer; }
+
+/*
+    ONE CARD
+**********/
+/**********
+    PANIER
+*/
+main.panier {
+  padding: 7% 0 0 30%; }
+  main.panier h1 {
+    margin-bottom: 1em;
+    padding-left: 10%; }
+  main.panier h2 {
+    margin: 3em 2em 1em; }
+  main.panier table {
+    margin: 1em 0;
+    border-collapse: collapse; }
+    main.panier table th {
+      padding: 0 1em;
+      margin: 1em 1em;
+      border-bottom: #CE7D47 solid 2px; }
+    main.panier table th#prix-total {
+      border: none;
+      padding-top: 0.5em; }
+    main.panier table td {
+      padding: 0.2em 1em; }
+  main.panier button {
+    background-color: transparent;
+    border: #CE7D47 solid 2px;
+    border-radius: 0.3em;
+    color: white; }
+  main.panier button#panier_remove {
+    padding: 0.4em; }
+  main.panier form div {
+    padding: 0.1em 0; }
+  main.panier form label {
+    display: inline-block;
+    width: 7em; }
+  main.panier form input {
+    width: 20em;
+    background-color: transparent;
+    border: #CE7D47 solid 2px;
+    border-radius: 0.3em;
+    color: white; }
+  main.panier form input:-webkit-autofill,
+  main.panier form input:-webkit-autofill:hover,
+  main.panier form input:-webkit-autofill:focus,
+  main.panier form input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #272727 inset;
+    box-shadow: 0 0 0 30px #272727 inset; }
+  main.panier form input:-webkit-autofill {
+    -webkit-text-fill-color: white; }
+  main.panier form input#envoyerForm {
+    width: inherit;
+    margin-top: 1em;
+    padding: 0.4em; }
+
+/*
+    PANIER
+**********/
+/**********
+    CONFIRMATION
+*/
+main.confirmation {
+  padding: 7% 0 0 30%; }
+  main.confirmation h1 {
+    margin-bottom: 1em;
+    padding-left: 10%; }
+  main.confirmation h2 {
+    margin: 3em 2em 1em; }
+  main.confirmation table {
+    margin: 1em 0;
+    border-collapse: collapse; }
+    main.confirmation table th {
+      padding: 0 1em;
+      margin: 1em 1em;
+      border-bottom: #CE7D47 solid 2px; }
+    main.confirmation table th#prix-total {
+      border: none;
+      padding-top: 0.5em; }
+    main.confirmation table td {
+      padding: 0.2em 1em; }
+  main.confirmation span {
+    display: block;
+    padding: 0.3em 0; }
+
+/*
+    CONFIRMATION
+**********/
