@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/mini-reset.css">   
+    <link rel="stylesheet" href="CSS/header-footer.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
+    <title>Confirmation</title>
+
+</head>
+<body>
+    
+
+    <header class="header-banniere">
+        <img src="./img/photo-1.jpg" alt="Un chariot à gauche et le nom Orinoco à droite" class="">
+        <div>
+            <a href="index.html">
+                <h2>Orinoco</h2>
+            </a>
+            <span>Voir le monde autrement !</span>
+        </div>
+        <a href="./panier.html"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+
+
+    <main class="confirmation">
+        <h1>Merci de votre achat !</h1>
+
+        <h2 id="commande">Commande</h2>
+            <table>
+                <tr>
+                    <th>Appareil</th>
+                    <th>Objectif</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire</th>
+                    <!-- <th></th> -->
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Prix Total</th>
+                </tr>
+                <tr>
+                    <th id="prix-total"></th>
+                </tr>
+            </table>
+        <h2 id="coordonnees">Coordonnées</h2>
+        <div id="orderID">
+            <h2>ID de commande</h2>
+            <span></span>
+        </div>
+            
+    </main>
+
+
+    <footer>
+        <a href="#">Mentions Legales</a>
+        <a href="mailto: orinoco-support@gmail.com">Contact</a>
+    </footer>
+
+
+    <script type="text/javascript" src="Back-End/app.js"></script>
+    <script type="text/javascript" src="JS/confirmation.js"></script>
+    <script src="https://kit.fontawesome.com/481aade194.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
