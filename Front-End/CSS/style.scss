@@ -10,6 +10,11 @@ html {
     --terciary: #CE7D47;
     --myGray: rgb(39, 39, 39);
 }
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
 /*
     HTML
 **********/
@@ -49,7 +54,8 @@ img {
     flex-wrap: wrap;
     justify-content: center;
         > div {
-        width: 30%;
+        // width: 30%;
+        width: 25rem;
         margin: $margin-into-card 1% 0;
         border: $myOrange solid 3px;
         border-radius: 1em;
@@ -87,7 +93,7 @@ img {
 .API-oneArticle  {
     font-size: 120%;
         > div {
-        width: 50%;
+        width: 50rem;
             img {
                 width: 100%;
             }
@@ -252,6 +258,36 @@ main.confirmation {
 /*
     CONFIRMATION
 **********/
-// @media (max-width: 768px) {
 
-// }
+
+/**********
+    QUERIES
+*/
+@media (max-width: 768px) {
+
+    main.panier {
+        padding: $margin-into-card 0 0 0;
+        table {
+            th, td {
+                padding: 0;
+            }
+            button {
+                display: block;
+            }
+        }
+    }
+    main.confirmation {
+        padding: $margin-into-card 0 0 0;
+        table th {
+            padding: 0 0.3em;
+        }
+        > span, div#orderID span {
+            display: block;
+            padding-left: 1em;
+        }
+    }
+
+}
+/*
+    QUERIES
+**********/

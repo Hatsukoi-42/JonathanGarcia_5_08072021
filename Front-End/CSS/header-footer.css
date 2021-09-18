@@ -26,17 +26,18 @@ header {
     color: #CE7D47; }
     header div > a h2 {
       font-size: 4em;
-      text-shadow: 3px 0 0 #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff; }
+      text-shadow: 1px 0 0 #272727, -1px 0 0 #272727, 0 1px 0 #272727, 0 -1px 0 #272727, 1px 1px #272727, -1px -1px 0 #272727, 1px -1px 0 #272727, -1px 1px 0 #272727; }
     header div span {
       font-size: 2em;
-      text-shadow: 3px 0 0 #272727, -3px 0 0 #272727, 0 3px 0 #272727, 0 -3px 0 #272727, 3px 3px #272727, -3px -3px 0 #272727, 3px -3px 0 #272727, -3px 3px 0 #272727; }
+      font-weight: 600;
+      color: #272727;
+      text-shadow: 1px 0 0 #CE7D47, -1px 0 0 #CE7D47, 0 1px 0 #CE7D47, 0 -1px 0 #CE7D47, 1px 1px #CE7D47, -1px -1px 0 #CE7D47, 1px -1px 0 #CE7D47, -1px 1px 0 #CE7D47; }
   header > a {
     position: absolute;
     top: 4rem;
     right: 5%;
     font-size: 4em;
-    font-weight: 600;
-    text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff, 4px 4px #fff, -4px -4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff; }
+    text-shadow: 1px 0 0 #272727, -1px 0 0 #272727, 0 1px 0 #272727, 0 -1px 0 #272727, 1px 1px #272727, -1px -1px 0 #272727, 1px -1px 0 #272727, -1px 1px 0 #272727; }
     header > a i {
       color: #CE7D47; }
 
@@ -71,4 +72,24 @@ footer {
 
 /*
     FOOTER
+**********/
+/**********
+    QUERIES
+*/
+@media (max-width: 768px) {
+  header > a, .header-banniere > a {
+    top: 12rem;
+    right: inherit;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    header > a i, .header-banniere > a i {
+      font-size: 0.8em; }
+  header img, .header-banniere img {
+    -o-object-position: 60%;
+    object-position: 60%; } }
+
+/*
+    QUERIES
 **********/

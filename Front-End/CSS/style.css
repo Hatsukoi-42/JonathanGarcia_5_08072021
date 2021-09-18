@@ -7,6 +7,10 @@ html {
   --terciary: #CE7D47;
   --myGray: rgb(39, 39, 39); }
 
+body {
+  max-width: 1440px;
+  margin: auto; }
+
 /*
     HTML
 **********/
@@ -44,7 +48,7 @@ img {
   -ms-flex-pack: center;
   justify-content: center; }
   .API-articles > div {
-    width: 30%;
+    width: 25rem;
     margin: 7% 1% 0;
     border: #CE7D47 solid 3px;
     border-radius: 1em; }
@@ -73,7 +77,7 @@ img {
 .API-oneArticle {
   font-size: 120%; }
   .API-oneArticle > div {
-    width: 50%; }
+    width: 50rem; }
     .API-oneArticle > div img {
       width: 100%; }
     .API-oneArticle > div > div h3 {
@@ -188,4 +192,25 @@ main.confirmation {
 
 /*
     CONFIRMATION
+**********/
+/**********
+    QUERIES
+*/
+@media (max-width: 768px) {
+  main.panier {
+    padding: 7% 0 0 0; }
+    main.panier table th, main.panier table td {
+      padding: 0; }
+    main.panier table button {
+      display: block; }
+  main.confirmation {
+    padding: 7% 0 0 0; }
+    main.confirmation table th {
+      padding: 0 0.3em; }
+    main.confirmation > span, main.confirmation div#orderID span {
+      display: block;
+      padding-left: 1em; } }
+
+/*
+    QUERIES
 **********/

@@ -32,12 +32,14 @@ header {
         > a {
             h2 {
                 font-size: 4em;
-                text-shadow: 3px 0 0 #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
+                    text-shadow: 1px 0 0 $myGray, -1px 0 0 $myGray, 0 1px 0 $myGray, 0 -1px 0 $myGray, 1px 1px $myGray, -1px -1px 0 $myGray, 1px -1px 0 $myGray, -1px 1px 0 $myGray;
             }
         }
         span {
             font-size: 2em;
-            text-shadow: 3px 0 0 $myGray, -3px 0 0 $myGray, 0 3px 0 $myGray, 0 -3px 0 $myGray, 3px 3px $myGray, -3px -3px 0 $myGray, 3px -3px 0 $myGray, -3px 3px 0 $myGray;
+            font-weight: 600;
+            color: $myGray;
+            text-shadow: 1px 0 0 $myOrange, -1px 0 0 $myOrange, 0 1px 0 $myOrange, 0 -1px 0 $myOrange, 1px 1px $myOrange, -1px -1px 0 $myOrange, 1px -1px 0 $myOrange, -1px 1px 0 $myOrange;
         }
     }
     > a {
@@ -45,8 +47,7 @@ header {
         top: 4rem;
         right: 5%;
         font-size: 4em;
-        font-weight: 600;
-        text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff, 4px 4px #fff, -4px -4px 0 #fff, 4px -4px 0 #fff, -4px 4px 0 #fff;
+        text-shadow: 1px 0 0 $myGray, -1px 0 0 $myGray, 0 1px 0 $myGray, 0 -1px 0 $myGray, 1px 1px $myGray, -1px -1px 0 $myGray, 1px -1px 0 $myGray, -1px 1px 0 $myGray;
         i {
             color: $myOrange;
         }
@@ -81,4 +82,31 @@ footer {
 }
 /*
     FOOTER
+**********/
+
+
+
+/**********
+    QUERIES
+*/
+@media (max-width: 768px) {
+
+    header, .header-banniere {
+        > a {
+            top: 12rem;
+            right: inherit;
+            left: 50%;
+            transform: translateX(-50%);
+            i {
+                font-size: 0.8em;
+            }
+        }
+        img {
+            object-position: 60%;
+        }
+    }
+
+}
+/*
+    QUERIES
 **********/
