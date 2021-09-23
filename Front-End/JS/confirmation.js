@@ -105,36 +105,32 @@ getData().then((data) => {
         email: email
     }
 
-    const productsBought = [
-        "5be1ed3f1c9d44000030b061",
-        "5be1ed3f1c9d44000030b061"
-    ];
+    let productsBought = []
+    let index = 0
+    for (counter = 0; counter < localStorage.index; counter++)
+    {
+        if (localStorage.getItem("item-" + counter))
+        {
+            productsBought[index] = JSON.parse(localStorage.getItem("item-" + counter)).id
+            index++
+        }
+    }
 
     const order = {
         contact: contactClient,
         products: productsBought,
     };
-
-    // console.log(localStorage)
     /*
         CREATE - objet pour API
     **********/
 
-    // POST request using fetch()
-    // let promise = fetch("http://localhost:3000/api/cameras/order",
-    // {
-    //     method: "POST",
-    //     body: JSON.stringify(order),
-    //     headers: {
-    //         "Content-type": "application/json; charset=UTF-8"
-    //     }
-    // })
-    // .then(response => response.json())
-    // .then(json => console.log(json));
 
-//--------------
-
+    /**********
+        POST - envoie et récupération de l'ID
+    */    
     const getOrder = async function () {
+        if (!order.products.length) {return}
+
         let init = {
             method: 'POST',
             headers: {
@@ -145,109 +141,18 @@ getData().then((data) => {
         let promise = await fetch("http://localhost:3000/api/cameras/order", init)
         let response = await promise.json()
 
-        // console.log(response.orderId) //
-
         document.querySelector("#orderID span").textContent = response.orderId
 
         return response
     }
 
     getOrder()
+    /*
+        POST - envoie et récupération de l'ID
+    **********/ 
 
-    // getOrder().then((response) => {
-    //     console.log(response.orderId)
-    // })
-
-
-
+        
 })
 /*
     PROMISE
-**********/
-
-
-
-/**********
-    PROMISE
-*/
-
-
-// localStorage.setItem("contactClient", JSON.stringify(contactClient))
-
-
-// const productsBought = [
-//     obj1 = {
-//         "test1":"test1"
-//     },
-//     obj2 = {
-//         "test2":"test2"
-//     }
-// ];
-// localStorage.setItem("productsBought", JSON.stringify(productsBought))
-
-// const order = {
-//     contact: contactClient,
-//     products: productsBought,
-// };
-// localStorage.setItem("order", JSON.stringify(order))
-
-// let priceConfirmation = 200
-
-// const options = {
-//     method: "POST",
-//     body: JSON.stringify(order),
-//     headers: { "Content-Type": "application/json" },
-//   };
-
-//   fetch("http://localhost:3000/api/cameras/order", options)
-//   .then((response) => response.json())
-//   .then((response) => {
-//       console.log("TEST - response\n")
-//       console.log(response)
-//   })
-//   .then((data) => {
-//     // localStorage.clear();
-//     console.log("TEST - data\n")
-//     console.log(data)
-//     // console.log(data.orderId)
-//     // localStorage.setItem("orderId", data.orderId);
-//     // localStorage.setItem("total", priceConfirmation);
-//   })
-//   .catch((err) => {
-//     alert("Il y a eu une erreur : " + err);
-//   });
-
-
-/**********
-    GET - API order
-*/
-// const getOrder = async function () {
-//     let reponse = await fetch("https://jsonplaceholder.typicode.com/posts", options)
-//     let order = await reponse.json()
-//     return order
-// }
-
-// getOrder().then((order) => {
-//     console.log("TEST - order")
-//     console.log(order)
-// })
-
-
-
-// POST request using fetch()
-// let promise = fetch("http://localhost:3000/api/cameras/order",
-// {
-//     method: "POST",
-//     body: JSON.stringify(order),
-//     headers: {
-//         "Content-type": "application/json; charset=UTF-8"
-//     }
-// })
-// .then(response => response.json())
-// .then(json => console.log(json));
-
-
-
-/*
-    GET - API order
 **********/

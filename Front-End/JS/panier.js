@@ -54,7 +54,6 @@ getData().then((data) => {
                 /***  Boutton Supprimer  ***/
                 let new_button = new_tr.appendChild(document.createElement('button'))
                 new_button.textContent = "Supprimer"
-                // new_button.classList = "p-1"
                 new_button.id = "suppButton_" + counter
                 
                     /***  Boutton Supprimer - EVENT LISTENER ***/
@@ -62,7 +61,6 @@ getData().then((data) => {
                         new_tr.remove()
                         localStorage.removeItem("item-" + new_button.id.replace(/\D/g,''))
                         document.location.reload();
-                        // console.log(localStorage) //
                     })
 
             }
@@ -104,7 +102,6 @@ getData().then((data) => {
 /**********
     FUNCTION
 */
-
 /*  replaceAt  */
 String.prototype.replaceAt = function(index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
@@ -118,27 +115,21 @@ function onlyNumber(id)
     {
         champ.value = champ.value.replace(/[^0-9]/,'');
     }
-    console.log(champ.value)
     if (champ.value[5]) {
         let text = champ.value
-        // let text = new String("TEST")
-        // let text = champ.value
-        // console.log(text);
         text = text.replaceAt(5, " ")
-        // console.log(text[0]);
         champ.value = text 
-        // champ.value = "T"       
     }
 }
-
-// function redirect() {
-//     window.location.href = "confirmation.html";
-// }
-
 /*
     FUNCTION
 **********/
 
+
+
+/**********
+    SEND FORM
+*/
 const btn_envoyerForm = document.querySelector("#envoyerForm");
 btn_envoyerForm.addEventListener("click", () => {
     var form = {}
@@ -150,8 +141,7 @@ btn_envoyerForm.addEventListener("click", () => {
     form["email"] = document.querySelector("#email").value
 
     localStorage.setItem("form", JSON.stringify(form))
-
-    // console.log(JSON.parse(localStorage.getItem("form")))
-
 })
-
+/*
+    SEND FORM
+**********/
