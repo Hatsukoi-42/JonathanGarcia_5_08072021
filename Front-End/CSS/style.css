@@ -1,12 +1,6 @@
 /**********
     HTML
 */
-html {
-  --primary: #F3E9F1;
-  --secondary: #CE7D47;
-  --terciary: #CE7D47;
-  --myGray: rgb(39, 39, 39); }
-
 body {
   max-width: 1440px;
   margin: auto; }

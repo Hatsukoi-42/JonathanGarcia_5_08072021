@@ -128,7 +128,6 @@ getData().then((data) => {
         EVENT LISTENER - Ajout au panier
     */
     let myInput = document.querySelector('input')
-    // Pourquoi je ne peux pas déclarer ma fonction en extérieur ?
     myInput.addEventListener('click', (event) => {
 
         for (let i = 0; i < data.length; i++)

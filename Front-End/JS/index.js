@@ -1,13 +1,4 @@
 /**********
-
-*/
-/*
-
-**********/
-
-
-
-/**********
     GET - API
 */
 const getData = async function () {
